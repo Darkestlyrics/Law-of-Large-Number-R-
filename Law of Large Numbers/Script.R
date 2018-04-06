@@ -14,7 +14,7 @@ tails <- c(0);
 	flipCoins(1000000);
 	flipCoins(10000000);
 	print("Graphing data");
-	
+	drawGraph();	
 
 #function to flip coins. 
 flipCoins <- function(iterations = 0) {
@@ -31,7 +31,6 @@ flipCoins <- function(iterations = 0) {
 	heads <- c(heads, iHeads);
 	tails <- c(tails, iTails);
 	print(paste(c("Heads =", calcPercentage(iHeads, iterations), " Tails =", calcPercentage(iTails, iterations)), collapse = " "));
-
 }
 #function to calculate percentage, returns formatted string
 calcPercentage <- function(num,total) {
